@@ -1,6 +1,7 @@
 (ns example.core
   (:use compojure.core)
   (:require
+    [compojure.route :as route]
     [ring.adapter.jetty :as jetty]
     [clostache.parser :as clostache]))
 
@@ -17,7 +18,9 @@
 
 ; Routing
 (defroutes main-routes
-  (GET "/" [] (index)))
+  (GET "/" [] (index))
+  (route/resources "/")
+  (route/not-found "404 Not Found"))
 
 ; Server
 (defn -main []
