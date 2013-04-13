@@ -4,10 +4,10 @@ A Clojure library designed to ... well, that part is up to you.
 
 ## Usage
 
-FIXME
+`lein run`
 
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 Adam Bard
 
 Distributed under the Eclipse Public License, the same as Clojure.
