@@ -1,4 +1,5 @@
 (defproject example "0.1.0-SNAPSHOT"
+  :min-lein-version "2.0.0"
   :description "A wee example project demonstrating the (very) basics of Compojure and Ring"
   :url "http://adambard.com/blog/Getting-started-with-Clojure-web-apps/"
   :license {:name "Eclipse Public License"
