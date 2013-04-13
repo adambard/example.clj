@@ -24,4 +24,5 @@
 
 ; Server
 (defn -main []
-  (jetty/run-jetty main-routes {:port 5000}))
+  (let [port (int (or (System/getenv "PORT") 5000))]
+    (jetty/run-jetty main-routes {:port port})))
